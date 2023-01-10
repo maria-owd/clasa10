@@ -34,7 +34,7 @@ int main () {
         media = (float)suma / (n-1);
         if ((float)v[i] == media) {
             contor++;
-            cout << "v[" << i << "] = " << v[i] << " \t" << suma << "\t" << media << endl;
+            // cout << "v[" << i << "] = " << v[i] << " \t" << suma << "\t" << media << endl;
         }
     }
 
