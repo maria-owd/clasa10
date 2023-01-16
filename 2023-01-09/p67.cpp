@@ -60,6 +60,7 @@ int main () {
                 t = c[i+1];
                 c[i+1] = c[i];
                 c[i] = t;
+                ok = false;
             }
         }
     } while (!ok);
