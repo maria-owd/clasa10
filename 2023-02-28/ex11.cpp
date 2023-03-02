@@ -21,7 +21,7 @@ int main() {
 
     cout << "matricea este: " << endl;
     for (int i = 0; i < m; i++) {
-        cout << i+1 << ": ";
+        cout << i << ": ";
         for (int j = 0; j < n; j++) {
             cout << setw(2) << a[i][j] << " ";
         }
@@ -99,7 +99,7 @@ int main() {
     
     cout << "e) " << endl;
     for (int i = 0; i < m; i++) {
-        cout << i+1 << ": ";
+        cout << i << ": ";
         for (int j = 0; j < n; j++) {
             cout << setw(2) << a[i][j] << " ";
         }
