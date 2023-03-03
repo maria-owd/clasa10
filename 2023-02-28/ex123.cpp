@@ -11,7 +11,7 @@ int main() {
     int v[3];
     int suma, contor;
 
-    ifstream f("date.in");
+    ifstream f("date123.in");
     
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
@@ -28,12 +28,13 @@ int main() {
         }
         cout << endl;
     }
+    cout << endl;
 
     // Ex. 1
     cout << "alege o linie de la 0 la " << m-1 << ": ";
     cin >> l;
 
-    cout << "elemntele liniei sunt: ";
+    cout << "1) elemntele liniei sunt: ";
     for (int i = 0; i < n; i++) {
         cout << a[l][i] << " ";
     }
@@ -43,7 +44,7 @@ int main() {
     cout << "alege o coloana de la 0 la " << n-1 << ": ";
     cin >> c;
 
-    cout << "elemntele coloanei sunt: " << endl;
+    cout << "2) elemntele coloanei sunt: " << endl;
     for (int i = 0; i < m; i++) {
         cout << a[i][c] << endl;;
     }
@@ -58,6 +59,7 @@ int main() {
         v[i] = suma;
     }
 
+    cout << "3) ";
     contor = 0;
     for (int i = 0; i < m-1; i++) {
         for (int j = i+1; j < m; j++) {
