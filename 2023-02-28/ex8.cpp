@@ -2,10 +2,18 @@
 #include <iomanip>
 #include <fstream>
 
+/**
+ *  Se citeste o matrice cu n linii si m coloane, (n,m<=100) cu elemente numere naturale din intervalul [0,10000].
+    Inlocuiti fiecare element din matrice cu 
+    numarul de divizori proprii pe care ii are si afisati matricea rezultata.
+    Repetati inlocuirile si afisarile pana cand in matrice toate elementele devin nule.
+ */
+
+
 using namespace std;
 int main() {
 
-    int a[4][3];
+    int a[100][100];
     int m = 4, n = 3;
     int divi;
     bool toateZero;

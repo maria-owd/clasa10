@@ -3,9 +3,22 @@
 #include <fstream>
 
 using namespace std;
+
+/**
+ *  Se citeste o matrice cu n linii si m coloane, (n,m<=100) 
+    cu elemente numere naturale din intervalul [0,1000].
+    a)  Afisati suma maxima care se poate obtine de pe
+        o coloana a matricii si indicele coloanei pe care s-a obtinut.
+        Daca sunt mai multe coloane cu aceeasi suma maxima, atunci se va considera oricare dintre ele.
+    b)  Stergeti din matrice coloana care are suma elementelor maxima 
+        si afisati matricea rezultata. 
+        Daca sunt mai multe coloane cu aceeasi suma maxima, 
+        atunci se va sterge oricare dintre ele (este suficient sa se stearga una).
+ */
+
 int main() {
 
-    int a[3][4];
+    int a[100][100];
     int m = 3, n = 4;
     int suma;
     int v[4], maxim, c;
@@ -44,7 +57,7 @@ int main() {
             c = j;
         }
     }
-    cout << "suma maxima e " << maxim << " de pe coloana: " << c+1 << endl;
+    cout << "suma maxima e " << maxim << " de pe coloana: " << c << endl;
 
     for (int j = c; j < n-1; j++) {
         for (int i = 0; i < m; i++) {

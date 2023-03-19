@@ -3,9 +3,17 @@
 #include <fstream>
 
 using namespace std;
+/**
+    Se citeste o matrice cu n linii si m coloane, (n,m<=100) cu elemente numere naturale din intervalul [0,1000].
+    a) Afisati suma minima care se poate obtine de pe o linie a matricii si indicele liniei pe care s-a obtinut. Daca
+    sunt mai multe linii cu aceeasi suma minima, atunci se va considera oricare dintre ele.
+    b) Stergeti din matrice linia care are suma elementelor minima si afisati matricea rezultata. Daca sunt mai
+    multe linii cu aceeasi suma minima, atunci se va sterge oricare dintre ele (este suficient sa se stearga una).
+*/
+
 int main() {
 
-    int a[4][3];
+    int a[100][100];
     int m = 4, n = 3;
     int suma;
     int v[4], minim, l;
