@@ -4,7 +4,7 @@
 using namespace std;
 
 /**
- * Inversati liniile (prima cu ultima; 2 cu 3).
+ * Prima coloana cu numar maxim de 1.
  */
 
 int main () {
