@@ -15,6 +15,7 @@ int main () {
     int a[10][10];
     int n, nr, produs;
     float suma; 
+    bool ok;
 
     ifstream f("date1.in");
 
@@ -47,15 +48,21 @@ int main () {
     cout << "media de deasupra dp: " << suma/nr << endl;
 
     produs = 1;
+    ok = false;
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n-1-i; j++) {
-            
             if (a[i][j] % 2 != 0 && a[i][j] > 0) {
                 produs = produs * a[i][j];
+                ok = true;
             }
         }
     }
-    cout << "produsul deasupra ds: " << produs << endl;
+    
+    if (ok) {
+        cout << "produsul deasupra ds: " << produs << endl;
+    } else {
+        cout << "nu s-a putut calcula prod.";
+    }
 
- return 0;
+    return 0;
 }
