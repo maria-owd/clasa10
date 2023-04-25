@@ -57,5 +57,5 @@ int main () {
     }
     cout << "produsul deasupra ds: " << produs << endl;
 
-
+ return 0;
 }
