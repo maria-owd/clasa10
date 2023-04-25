@@ -13,9 +13,8 @@ using namespace std;
 
 int main () {
     int a[10][10];
-    int n, nr;
-    float suma;
-    long produs;
+    int n, nr, produs;
+    float suma; 
 
     ifstream f("date1.in");
 
