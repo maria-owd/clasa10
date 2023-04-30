@@ -3,7 +3,7 @@
 #include <iomanip>
 
 /*
-    triunghiulara superior
+    produs elemente minime de pe coloana, dar de pe ds
 */
 using namespace std;
 int main () {
