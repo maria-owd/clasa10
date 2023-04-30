@@ -3,7 +3,7 @@
 #include <iomanip>
 
 /*
-    Afisati elemntele care sunt strict mai mici ca toti vecinii.
+eliminati linia + coloana elementului minim
 */
 using namespace std;
 int main () {
