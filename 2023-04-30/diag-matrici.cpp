@@ -125,7 +125,44 @@ int main()
     }
     
     cout << endl << endl;
+
+    //zonele
+    cout << "zona de NORD: " << endl;
+    for (int i = 0; i < n/2; i++) {
+        for (int j = i+1; j < n-1-i; j++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl << endl;
+
+    cout << "zona de SUD: " << endl;
+    for (int i = n/2+1; i < n; i++) {
+        for (int j = n-i; j < i; j++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl << endl;
+
+    cout << "zona de VEST: " << endl;
+    for (int j = 0; j < n/2; j++) {
+        for (int i = j+1; i < n-1-j; i++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl << endl;
     
+    cout << "zona de EST: " << endl;
+    for (int j = n/2+1; j < n; j++) {
+        for (int i = n-j; i < j; i++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << endl << endl;
+
     /* Conditii de existenta pe diagonale  */
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
